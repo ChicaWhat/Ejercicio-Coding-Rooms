@@ -16,6 +16,7 @@ body {
     background-color: rgb(202, 199, 194);
     max-width: 1200px;
     min-height: 100vh;
+    /* margin: 0 auto; */
 }
 
 header {
@@ -71,6 +72,8 @@ body main {
     align-items: center;
     background-color: white;
     padding: 2rem;
+    /* height: calc(100vh - 4.5rem - 2rem);   */ 
+    /* Aquí no se muy bien aplicar el selector de calc()  */
 }
 
 /* Este main es solo de la página incial */
@@ -252,6 +255,10 @@ footer {
 
     main iframe {
         width: 90%;
+    }
+
+    #foto{
+        max-width: 250px
     }
 
     section.listas li {
