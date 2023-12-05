@@ -16,7 +16,8 @@ body {
     background-color: rgb(202, 199, 194);
     max-width: 1200px;
     min-height: 100vh;
-    /* margin: 0 auto; */
+    margin: 0 auto; 
+    /* Añadido un margin auto */
 }
 
 header {
@@ -72,11 +73,12 @@ body main {
     display: flex;
     flex-direction:  column;
     align-items: center;
-
+    justify-content: space-evenly;
     background-color: white;
     padding: 2rem;
     /* height: calc(100vh - 4.5rem - 2rem);   */ 
     /* Aquí no se muy bien aplicar el selector de calc()  */
+
 }
 
 /* Este main es solo de la página incial */
@@ -103,10 +105,9 @@ body main {
 }
 
 #intro {
-
     font-style: italic;
-    font-size: 20px;
-
+    font-size: 1.5rem;
+    line-height: 1.8;
 }
 
 #inicio {
@@ -114,8 +115,7 @@ body main {
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
-    text-align: center;
-    /* He conseguido alinear todo el contenido del main index usando text-align */
+
 }
 
 #bg-inicio {
@@ -126,7 +126,8 @@ body main {
     margin: auto;
     padding: 2rem;
     background-color: rgb(0, 0, 0, 0.6);
-
+    text-align: center;
+    /* He conseguido alinear todo el contenido del main index usando text-align */
 }
 
 
@@ -150,8 +151,11 @@ body main {
 
     color: rgb(124, 120, 120);
     border-radius: 15px;
-    font-size: 30px;
+    font-size: 3rem;
+    /* He cambiado el tamaño de la fuente */
     margin-top: 10px;
+    padding: 1rem 2rem;
+    /* Añadido un padding */
 }
 
 
@@ -286,6 +290,11 @@ footer {
 
     #foto{
         max-width: 250px
+    }
+
+    #intro{
+        font-size: 1.2rem;
+        line-height: 1.5;
     }
 
     section.listas li {
