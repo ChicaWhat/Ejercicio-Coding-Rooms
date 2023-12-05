@@ -60,6 +60,8 @@ a:hover {
     background-color: #555;
     border-radius: 5px;
     padding: 5px;
+    transition: background 600ms; 
+    /* Añadido el cambio de color en el background con el selector transition */
 }
 
 
@@ -70,6 +72,7 @@ body main {
     display: flex;
     flex-direction:  column;
     align-items: center;
+
     background-color: white;
     padding: 2rem;
     /* height: calc(100vh - 4.5rem - 2rem);   */ 
@@ -78,10 +81,32 @@ body main {
 
 /* Este main es solo de la página incial */
 
+.pulso:hover{
+    cursor: pointer;
+    animation: pulso 2s infinite;
+}
+
+@keyframes pulso {
+
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.5);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+    
+}
+
 #intro {
 
     font-style: italic;
     font-size: 20px;
+
 }
 
 #inicio {
@@ -89,6 +114,8 @@ body main {
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
+    text-align: center;
+    /* He conseguido alinear todo el contenido del main index usando text-align */
 }
 
 #bg-inicio {
